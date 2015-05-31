@@ -10,6 +10,14 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="watchVideo"
+        android:layout_above="@+id/button1"
+        android:text="@string/watch_video" />
+
+    <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

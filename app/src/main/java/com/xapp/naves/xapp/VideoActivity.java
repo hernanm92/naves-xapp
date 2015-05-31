@@ -1,6 +1,7 @@
 package com.xapp.naves.xapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -41,6 +42,11 @@ public class VideoActivity extends ActionBarActivity {
 
     public void openMain(View view) {
         Intent intent = new Intent(VideoActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void watchVideo(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=KcAc4opTvaE"));
         startActivity(intent);
     }
 

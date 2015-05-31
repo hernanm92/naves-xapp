@@ -1,9 +1,11 @@
 package com.xapp.naves.xapp;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class VideoActivity extends ActionBarActivity {
@@ -36,4 +38,10 @@ public class VideoActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void openMain(View view) {
+        Intent intent = new Intent(VideoActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

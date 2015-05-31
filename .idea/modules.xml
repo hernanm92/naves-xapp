@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Xapp.iml" filepath="$PROJECT_DIR$/Xapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naves-xapp.iml" filepath="$PROJECT_DIR$/naves-xapp.iml" />
     </modules>
   </component>
 </project>

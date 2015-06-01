@@ -18,9 +18,12 @@
         </activity>
         <activity
             android:name=".VideoActivity"
-            android:label="@string/title_activity_video">
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
         </activity>
     </application>
 
 </manifest>
-

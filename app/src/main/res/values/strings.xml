@@ -9,5 +9,16 @@
     <string name="bye_world">Bye world!</string>
     <string name="watch_video">Watch video</string>
     <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="bmx">BMX</string>
+    <string name="esqui">Esquí</string>
+    <string name="longboard">Longboard</string>
+    <string name="skate">Skate</string>
+    <string name="snowboard">Snowboard</string>
+    <string name="surf">Surf</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="menu">Menu</string>
 
 </resources>

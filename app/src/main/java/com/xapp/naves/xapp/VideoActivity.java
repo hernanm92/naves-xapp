@@ -45,7 +45,7 @@ public class VideoActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void watchVideo(View view) {
+    public void watchVideo(View view) { //se le puede pasar el id de los videos
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=KcAc4opTvaE"));
         startActivity(intent);
     }

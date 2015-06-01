@@ -10,12 +10,20 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/button23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="watchBMXVideo"
+        android:layout_above="@+id/button2"
+        android:text="@string/bmx_video" />
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="watchVideo"
+        android:onClick="watchLongboardVideo"
         android:layout_above="@+id/button1"
-        android:text="@string/watch_video" />
+        android:text="@string/longboard_video" />
 
     <Button
         android:id="@+id/button1"

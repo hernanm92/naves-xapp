@@ -20,5 +20,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="menu">Menu</string>
+    <string name="longboard_video">Longboard video</string>
+    <string name="bmx_video">BMX video</string>
 
 </resources>

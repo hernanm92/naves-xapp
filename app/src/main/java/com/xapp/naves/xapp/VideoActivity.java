@@ -45,7 +45,12 @@ public class VideoActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void watchVideo(View view) { //se le puede pasar el id de los videos
+    public void watchBMXVideo(View view) { //se le puede pasar el id de los videos
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=K9XCKP9KN7A"));
+        startActivity(intent);
+    }
+
+    public void watchLongboardVideo(View view) { //se le puede pasar el id de los videos
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=KcAc4opTvaE"));
         startActivity(intent);
     }

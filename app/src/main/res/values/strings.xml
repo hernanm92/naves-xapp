@@ -22,5 +22,8 @@
     <string name="menu">Menu</string>
     <string name="longboard_video">Longboard video</string>
     <string name="bmx_video">BMX video</string>
+    <string name="trick_tutorials">Trick tutorials</string>
+    <string name="longboard_shapes">Longboard shapes</string>
+    <string name="videos">Videos</string>
 
 </resources>

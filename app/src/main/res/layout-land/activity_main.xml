@@ -4,37 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
         <TextView android:text="@string/longboard_shapes" android:id="@+id/text1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="60px"
             android:textStyle="bold"
             android:gravity="center|top"/>
 
-        <Button
-            android:id="@+id/button2"
+        <LinearLayout android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="openMenu"
-            android:layout_above="@+id/button1"
-            android:text="probando" />
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:onClick="openVideo"
-            android:text="@string/next_button" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="openMenu"
+                android:text="Menu"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="openVideo"
+                android:text="@string/next_button"
+                android:layout_gravity="bottom" />
             <!--android:gravity="bottom"-->
-    </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/left_drawer"

@@ -13,12 +13,12 @@ public class ViewVideoActivity extends YouTubeBaseActivity implements
         YouTubePlayer.OnInitializedListener{
 
     public static final String API_KEY = "AIzaSyDzw0McyGses_csUu74l0R_LZLiPq55-sc";
-    public static final String VIDEO_ID = "lBRpw31cNe0";
+    public static final String VIDEO_ID = "OW-J2pQrlsw";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_view_video);
 
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView)findViewById(R.id.youtubeplayerview);
         youTubePlayerView.initialize(API_KEY, this);

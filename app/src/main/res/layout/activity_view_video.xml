@@ -7,15 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="http://android-er.blogspot.com/"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:autoLink="web" />
+    tools:context=".ViewVideoActivity" >
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtubeplayerview"

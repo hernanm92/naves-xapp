@@ -55,4 +55,9 @@ public class VideoActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void goToApiVideo(View view) {
+        Intent intent = new Intent(VideoActivity.this, ViewVideoActivity.class);
+        startActivity(intent);
+    }
+
 }

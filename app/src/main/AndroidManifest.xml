@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/android_skate"
+        android:icon="@drawable/skate"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity

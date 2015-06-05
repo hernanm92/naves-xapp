@@ -13,23 +13,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:stepSize="1.0"
-        android:rating="2.0"
-        android:layout_below="@+id/youtubeplayerview"/>
-        <!-- style="?android:attr/ratingBarStyleIndicator" cambia el tamaño, pero no l deja modificar-->
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:onClick="rankActivity"
-        android:text="Rank video"
-        android:layout_gravity="bottom" />
-
 </RelativeLayout>

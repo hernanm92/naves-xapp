@@ -6,7 +6,9 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 public class ViewVideoActivity extends YouTubeBaseActivity implements
@@ -38,6 +40,11 @@ public class ViewVideoActivity extends YouTubeBaseActivity implements
         if (!wasRestored) {
             player.cueVideo(VIDEO_ID);
         }
+    }
+
+    public void rankActivity(View view) {
+        Intent intent = new Intent(ViewVideoActivity.this, RankActivity.class);
+        startActivity(intent);
     }
 
 }

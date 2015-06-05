@@ -27,5 +27,6 @@
     <string name="videos">Videos</string>
     <string name="title_activity_view_video">ViewVideoActivity</string>
     <string name="api_video">API Video</string>
+    <string name="title_activity_rank">RankActivity</string>
 
 </resources>

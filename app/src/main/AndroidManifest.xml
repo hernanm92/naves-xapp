@@ -30,6 +30,10 @@
             android:name=".ViewVideoActivity"
             android:label="@string/title_activity_view_video" >
         </activity>
+        <activity
+            android:name=".RankActivity"
+            android:label="@string/title_activity_rank" >
+        </activity>
     </application>
 
 </manifest>

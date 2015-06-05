@@ -41,8 +41,9 @@ public class VideoActivity extends ActionBarActivity {
     }
 
     public void openMain(View view) {
-        Intent intent = new Intent(VideoActivity.this, MainActivity.class);
-        startActivity(intent);
+        this.finish();
+        //Intent intent = new Intent(VideoActivity.this, MainActivity.class);
+        //startActivity(intent);
     }
 
     public void watchBMXVideo(View view) { //se le puede pasar el id de los videos

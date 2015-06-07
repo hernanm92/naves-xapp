@@ -22,6 +22,8 @@
         android:rating="2.0"
         android:layout_below="@+id/youtubeplayerview"/>
         <!-- style="?android:attr/ratingBarStyleIndicator" cambia el tamaño, pero no l deja modificar-->
+        <!--style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="false"-->
 
     <Button
         android:id="@+id/button1"

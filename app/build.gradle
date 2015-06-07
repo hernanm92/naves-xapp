@@ -21,6 +21,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3' //21 por el SDK (creo que hay que bajarlo para dar soporte a otros androids)
     compile project(':YouTubeAndroidPlayerApi')
 }

@@ -7,13 +7,23 @@
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
 
-    <TextView android:text="@string/trick_tutorials" android:layout_width="wrap_content"
-        android:textSize="60px"
-        android:textStyle="bold"
-        android:gravity="center|top"
-        android:layout_height="wrap_content" />
+        <TextView android:text="@string/trick_tutorials" android:layout_width="wrap_content"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:gravity="center|top"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openList"
+            android:text="List"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
          this as a sliding drawer on the left side for left-to-right

@@ -1,6 +1,7 @@
 package com.xapp.naves.xapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -59,7 +60,9 @@ public class MenuActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.bmx);
+                mTitle = getString(R.string.bmx); //settea el titulo al activity
+                //mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+                //setContentView(R.layout.activity_main);
                 break;
             case 2:
                 mTitle = getString(R.string.esqui);
@@ -153,6 +156,11 @@ public class MenuActivity extends ActionBarActivity
             ((MenuActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+    }
+
+    public void openList(View view) {
+        Intent intent = new Intent(MenuActivity.this, ListActivity.class);
+        startActivity(intent);
     }
 
 }

@@ -17,6 +17,15 @@
             android:layout_gravity="center_horizontal|top" />
 
         <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:layout_above="@+id/button1"
+            android:text="Log in"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

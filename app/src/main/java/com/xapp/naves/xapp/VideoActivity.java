@@ -61,4 +61,9 @@ public class VideoActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void login(View view) {
+        Intent intent = new Intent(VideoActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
 }

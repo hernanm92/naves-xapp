@@ -8,17 +8,25 @@ import com.google.android.youtube.player.YouTubePlayer.Provider;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 public class ViewVideoActivity extends YouTubeBaseActivity implements
         YouTubePlayer.OnInitializedListener{
 
+    private static final String TAG = ViewVideoActivity.class.getSimpleName();
     public static final String API_KEY = "AIzaSyDzw0McyGses_csUu74l0R_LZLiPq55-sc";
-    public static final String VIDEO_ID = "OW-J2pQrlsw";
+    public static String VIDEO_ID = "OW-J2pQrlsw"; //final significaba que no se le puede cambiar el valor
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //el bundle es un objeto en el que podes guardar estados desde el activity anterior
+
+        //Log.d(TAG, getIntent().getStringExtra("VideoId"));
+        if(getIntent().getStringExtra("VideoId") != null){
+            VIDEO_ID = getIntent().getStringExtra("VideoId");
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_video);
 

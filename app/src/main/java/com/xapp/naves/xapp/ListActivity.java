@@ -1,6 +1,7 @@
 package com.xapp.naves.xapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -57,8 +58,13 @@ public class ListActivity extends Activity implements AdapterView.OnItemClickLis
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         Tarea tareaActual = (Tarea)adaptador.getItem(position);
-        String msg = "Elegiste la tarea:\n"+tareaActual.getNombre()+"-"+tareaActual.getHora();
+        String msg = "Elegiste la tarea:\n"+tareaActual.getNombre()+"-"+tareaActual.getId();
         Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+
+
+        Intent intent = new Intent(ListActivity.this, ViewVideoActivity.class);
+        intent.putExtra("VideoId", tareaActual.getId()); //Your id
+        startActivity(intent);
 
     }
 }

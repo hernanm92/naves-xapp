@@ -3,6 +3,8 @@ package com.xapp.naves.xapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,8 +14,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class ListActivity extends Activity implements AdapterView.OnItemClickListener {
+public class ListActivity extends ActionBarActivity implements AdapterView.OnItemClickListener {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     ListView lista;
     ArrayAdapter adaptador;
 
@@ -46,11 +49,6 @@ public class ListActivity extends Activity implements AdapterView.OnItemClickLis
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_clear) {
-            //Limpiar todos los elementos
-            adaptador.clear();
-            return true;
-        }
         return super.onOptionsItemSelected(item);
     }
 

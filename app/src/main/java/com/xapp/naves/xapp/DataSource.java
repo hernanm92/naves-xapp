@@ -14,10 +14,10 @@ public class DataSource {
 
     static{
 
-        TAREAS.add(new Tarea("mIPd9BEwTw4", "Shove it","Longboard",R.drawable.shove_it));
-        TAREAS.add(new Tarea("wU26njmPuZE", "Kickflip","Longboard",R.drawable.kickflip));
-        TAREAS.add(new Tarea("wU26njmPuZE", "Flat top","Longboard",R.drawable.flat_top));
-        TAREAS.add(new Tarea("wU26njmPuZE", "Ghostride kickflip","Longboard",R.drawable.ghostride_kickflip));
+        TAREAS.add(new Tarea("oqIdEKzqPh0", "Shove it","Longboard",R.drawable.shove_it));
+        TAREAS.add(new Tarea("Mmjbaa5Q4Dk", "Kickflip","Longboard",R.drawable.kickflip));
+        TAREAS.add(new Tarea("2750ooxbUM4", "Flat top","Longboard",R.drawable.flat_top));
+        TAREAS.add(new Tarea("o-K0Y-yfPjM", "Ghostride kickflip","Longboard",R.drawable.ghostride_kickflip)); //cambiar video
         TAREAS.add(new Tarea("wU26njmPuZE", "Footbrake","Longboard",R.drawable.footbrake));
         TAREAS.add(new Tarea("wU26njmPuZE", "Turndown","BMX",R.drawable.turndown));
         TAREAS.add(new Tarea("wU26njmPuZE", "Footjam","BMX",R.drawable.footjam));

@@ -9,9 +9,11 @@ import com.google.android.youtube.player.YouTubePlayer.Provider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
+//TODO: usar YouTubePlayerFragment en ves de ViewVideoActivity para poder agregarle un navigation bar
 public class ViewVideoActivity extends YouTubeBaseActivity implements
         YouTubePlayer.OnInitializedListener{
 
@@ -32,6 +34,13 @@ public class ViewVideoActivity extends YouTubeBaseActivity implements
 
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView)findViewById(R.id.youtubeplayerview);
         youTubePlayerView.initialize(API_KEY, this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_view_video, menu);
+        return true;
     }
 
     @Override

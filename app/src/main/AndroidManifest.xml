@@ -3,6 +3,7 @@
     package="com.xapp.naves.xapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="11" />-->
 
     <!--
      To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <drawable name="semitransparent_white">#77ffffff</drawable>
+    <color name="android_blue">#FF33b5e5</color>
+    <color name="android_darkpurple">#FF9933cc</color>
+    <color name="android_orange">#FFffbb33</color>
+    <color name="android_red">#FFff4444</color>
+    <color name="android_darkpink">#FFc3325f</color>
+    <color name="android_pink">#FFd9698c</color>
+    <color name="android_green">#FF99cc00</color>
+    <color name="android_darkgreen">#FF669900</color>
 </resources>

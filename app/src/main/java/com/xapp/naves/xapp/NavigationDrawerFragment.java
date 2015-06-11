@@ -103,9 +103,9 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.id.text1,
                 new String[]{
                         getString(R.string.bmx),
-                        getString(R.string.esqui),
                         getString(R.string.longboard),
                         getString(R.string.skate),
+                        getString(R.string.ski),
                         getString(R.string.snowboard),
                         getString(R.string.surf),
                 }));

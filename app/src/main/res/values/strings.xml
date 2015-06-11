@@ -11,7 +11,7 @@
     <string name="title_activity_video">VideoActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="bmx">BMX</string>
-    <string name="esqui">Esquí</string>
+    <string name="ski">Ski</string>
     <string name="longboard">Longboard</string>
     <string name="skate">Skate</string>
     <string name="snowboard">Snowboard</string>
@@ -30,5 +30,9 @@
     <string name="title_activity_rank">RankActivity</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="action_clear">Clear</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 
 </resources>

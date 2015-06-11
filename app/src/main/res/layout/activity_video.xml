@@ -13,12 +13,20 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="login"
-        android:layout_above="@+id/button4"
+        android:layout_above="@+id/button5"
         android:text="Log in"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openTabbed"
+        android:layout_above="@+id/button4"
+        android:text="Tabbed activity"/>
 
     <Button
         android:id="@+id/button4"

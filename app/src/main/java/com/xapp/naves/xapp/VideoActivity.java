@@ -66,4 +66,9 @@ public class VideoActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void openTabbed(View view) {
+        Intent intent = new Intent(VideoActivity.this, TabbedActivity.class);
+        startActivity(intent);
+    }
+
 }

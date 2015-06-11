@@ -53,7 +53,7 @@ public class MenuActivity extends ActionBarActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, "longboard probando"))
                 .commit();
     }
 
@@ -62,7 +62,7 @@ public class MenuActivity extends ActionBarActivity
             case 1:
                 mTitle = getString(R.string.bmx); //settea el titulo al activity
                 //mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-                //setContentView(R.layout.activity_main);
+                //setContentView(R.layout.activity_menu);
                 break;
             case 2:
                 mTitle = getString(R.string.longboard);
@@ -127,15 +127,18 @@ public class MenuActivity extends ActionBarActivity
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private static final String TITLE = "title";
 
+        private String title;
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
+        public static PlaceholderFragment newInstance(int sectionNumber, String title) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            args.putString(TITLE, title);
             fragment.setArguments(args);
             return fragment;
         }
@@ -147,6 +150,8 @@ public class MenuActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
+            TextView section = (TextView) rootView.findViewById(R.id.section_label);
+            section.setText(getArguments().getString(TITLE));
             return rootView;
         }
 

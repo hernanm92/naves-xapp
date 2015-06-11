@@ -36,5 +36,6 @@
         android:layout_width="@dimen/navigation_drawer_width" android:layout_height="match_parent"
         android:layout_gravity="start" android:name="com.xapp.naves.xapp.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
+        <!--referencia al fragment que se va a ir modificando cuando cambias de pestaña-->
 
 </android.support.v4.widget.DrawerLayout>

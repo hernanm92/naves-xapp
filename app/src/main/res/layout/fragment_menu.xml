@@ -10,3 +10,5 @@
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
+
+<!--TODO: aca mas adelante va a ir un ListView con el listado de cada categoria-->

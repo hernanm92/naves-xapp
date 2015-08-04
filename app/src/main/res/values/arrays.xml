@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_options">
+        <item>code1 example</item>
+        <item>code2 example</item>
+        <item>code3 example</item>
+        <item>code4 example</item>
+        <item>code5 example</item>
+        <item>code6 example</item>
+    </string-array>
+</resources>

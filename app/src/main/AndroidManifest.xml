@@ -17,7 +17,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/skate"
+        android:icon="@drawable/logo105"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity

@@ -1,10 +1,8 @@
 package com.xapp.naves.xapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,7 +27,7 @@ public class ListActivity extends ActionBarActivity implements AdapterView.OnIte
         lista = (ListView)findViewById(R.id.lista);
 
         //Inicializar el adaptador con la fuente de datos
-        adaptador = new TareaArrayAdapter(this,DataSource.TAREAS);
+        adaptador = new TrucoArrayAdapter(this,DataSource.TAREAS);
 
         //Relacionando la lista con el adaptador
         lista.setAdapter(adaptador);

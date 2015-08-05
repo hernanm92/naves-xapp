@@ -13,9 +13,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class TareaArrayAdapter extends ArrayAdapter<Truco> {
+public class TrucoArrayAdapter extends ArrayAdapter<Truco> {
 
-    public TareaArrayAdapter(Context context, List<Truco> objects) {
+    public TrucoArrayAdapter(Context context, List<Truco> objects) {
         super(context, 0, objects);
     }
 

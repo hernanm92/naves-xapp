@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_options">
+        <item>elemento1</item>
+        <item>elemento2</item>
+        <item>elemento3</item>
+        <item>elemento4</item>
+        <item>elemento5</item>
+        <item>elemento6</item>
+    </string-array>
+</resources>
+<!--no necesito un array de strings-->

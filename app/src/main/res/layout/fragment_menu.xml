@@ -18,4 +18,12 @@
         android:layout_below="@+id/title"
         android:layout_height="wrap_content" />
 
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_fragment"
+        android:layout_below="@+id/section_label"
+        android:listSelector="@drawable/item_list_indicator"/>
+
 </RelativeLayout>

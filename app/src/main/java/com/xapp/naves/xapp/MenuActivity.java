@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.webkit.WebViewFragment;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
@@ -163,8 +164,10 @@ public class MenuActivity extends ActionBarActivity
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
         private static final String ARG_SPORT_NAME = "sport_name";
-        private TextView myTV;
+        private TextView textView;
+        private ListView listView;
         private static String sport;
+        ArrayAdapter adaptador;
 
         /**
          * Returns a new instance of this fragment for the given section
@@ -187,8 +190,12 @@ public class MenuActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
-            myTV = (TextView) rootView.findViewById(R.id.section_label);
-            myTV.setText(sport);
+            textView = (TextView) rootView.findViewById(R.id.section_label);
+            textView.setText(sport);
+
+            listView = (ListView) rootView.findViewById(R.id.list_fragment);
+            adaptador = new TareaArrayAdapter(getActivity(),DataSource.TAREAS); //le paso el activity y el array
+            listView.setAdapter(adaptador); //se lo setteo al componente ListView
 
             return rootView;
         }

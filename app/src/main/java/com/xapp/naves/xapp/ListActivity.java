@@ -55,13 +55,13 @@ public class ListActivity extends ActionBarActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-        Tarea tareaActual = (Tarea)adaptador.getItem(position);
-        String msg = "Elegiste la tarea:\n"+tareaActual.getNombre()+"-"+tareaActual.getId();
+        Truco trucoActual = (Truco)adaptador.getItem(position);
+        String msg = "Elegiste la tarea:\n"+trucoActual.getNombre()+"-"+trucoActual.getId();
         Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
 
 
         Intent intent = new Intent(ListActivity.this, ViewVideoActivity.class);
-        intent.putExtra("VideoId", tareaActual.getId()); //Your id
+        intent.putExtra("VideoId", trucoActual.getId()); //Your id
         startActivity(intent);
 
     }

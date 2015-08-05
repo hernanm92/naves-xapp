@@ -13,9 +13,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class TareaArrayAdapter extends ArrayAdapter<Tarea> {
+public class TareaArrayAdapter extends ArrayAdapter<Truco> {
 
-    public TareaArrayAdapter(Context context, List<Tarea> objects) {
+    public TareaArrayAdapter(Context context, List<Truco> objects) {
         super(context, 0, objects);
     }
 
@@ -44,8 +44,8 @@ public class TareaArrayAdapter extends ArrayAdapter<Tarea> {
         ImageView categoria = (ImageView)listItemView.findViewById(R.id.category);
 
 
-        //Obteniendo instancia de la Tarea en la posición actual
-        Tarea item = getItem(position);
+        //Obteniendo instancia del Truco en la posición actual
+        Truco item = getItem(position);
 
         titulo.setText(item.getNombre());
         subtitulo.setText(item.getHora());

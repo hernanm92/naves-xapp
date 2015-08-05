@@ -3,14 +3,14 @@ package com.xapp.naves.xapp;
 /**
  * Created by hmaschwitz on 6/6/15.
  */
-public class Tarea{
+public class Truco{
 
     private String id;
     private String nombre;
     private String hora;
     private int categoria;
 
-    public Tarea(String id, String nombre, String hora, int categoria){
+    public Truco(String id, String nombre, String hora, int categoria){
         this.id = id;
         this.nombre = nombre;
         this.hora = hora;

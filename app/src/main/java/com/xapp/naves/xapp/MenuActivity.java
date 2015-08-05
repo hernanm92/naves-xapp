@@ -70,37 +70,44 @@ public class MenuActivity extends ActionBarActivity
 
         Log.i("hernan", "position: " + position);
         String sportName = null;
+        ArrayAdapter adaptador = null;
 
         switch (position) {
             case 0:
                 //bmx
                 sportName = "bmx";
+                adaptador = new TrucoArrayAdapter(this,DataSource.bmxTricks);
                 break;
             case 1:
                 //logboard
                 sportName = "logboard";
+                adaptador = new TrucoArrayAdapter(this,DataSource.longboardTricks);
                 break;
             case 2:
                 //skate
                 sportName = "skate";
+                adaptador = new TrucoArrayAdapter(this,DataSource.skateTricks);
                 break;
             case 3:
                 //ski
                 sportName = "ski";
+                adaptador = new TrucoArrayAdapter(this,DataSource.skiTricks);
                 break;
             case 4:
                 //snowboard
                 sportName = "snowboard";
+                adaptador = new TrucoArrayAdapter(this,DataSource.snowboardTricks);
                 break;
             case 5:
                 //surf
                 sportName = "surf";
+                adaptador = new TrucoArrayAdapter(this,DataSource.surfTricks);
                 break;
         }
 
         //fragmentManager.findFragmentById()
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, sportName)) //settea un nuevo fragment en el frameLayout container
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, sportName, adaptador)) //settea un nuevo fragment en el frameLayout container
                 .commit();
     }
 
@@ -179,18 +186,19 @@ public class MenuActivity extends ActionBarActivity
         private TextView textView;
         private ListView listView;
         private static String sport;
-        ArrayAdapter adaptador;
+        private static ArrayAdapter adaptador;
 
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber, String sportName) {
+        public static PlaceholderFragment newInstance(int sectionNumber, String sportName, ArrayAdapter adapter) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             args.putString(ARG_SPORT_NAME, sportName);
             sport = sportName;
+            adaptador = adapter;
             fragment.setArguments(args);
             return fragment;
         }
@@ -206,7 +214,7 @@ public class MenuActivity extends ActionBarActivity
             textView.setText(sport);
 
             listView = (ListView) rootView.findViewById(R.id.list_fragment);
-            adaptador = new TrucoArrayAdapter(getActivity(),DataSource.TAREAS); //le paso el activity y el array
+            //adaptador = new TrucoArrayAdapter(getActivity(),DataSource.TAREAS); //le paso el activity y el array
             listView.setAdapter(adaptador); //se lo setteo al componente ListView
 
             return rootView;

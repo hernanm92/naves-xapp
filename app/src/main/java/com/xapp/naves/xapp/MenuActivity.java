@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.webkit.WebViewFragment;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
@@ -52,12 +54,45 @@ public class MenuActivity extends ActionBarActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+
+        Log.i("hernan", "position: " + position);
+        String sportName = null;
+
+        switch (position) {
+            case 0:
+                //bmx
+                sportName = "bmx";
+                break;
+            case 1:
+                //logboard
+                sportName = "logboard";
+                break;
+            case 2:
+                //skate
+                sportName = "skate";
+                break;
+            case 3:
+                //ski
+                sportName = "ski";
+                break;
+            case 4:
+                //snowboard
+                sportName = "snowboard";
+                break;
+            case 5:
+                //surf
+                sportName = "surf";
+                break;
+        }
+
+        //fragmentManager.findFragmentById()
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, sportName)) //settea un nuevo fragment en el frameLayout container
                 .commit();
     }
 
-    public void onSectionAttached(int number) {
+    public void onSectionAttached(int number) { //lo del case anterior termina llegando a este mismo case (si uso un solo fragment)
+        Log.i("hernan", "number: " + number);
         switch (number) {
             case 1:
                 mTitle = getString(R.string.bmx); //settea el titulo al activity
@@ -121,21 +156,26 @@ public class MenuActivity extends ActionBarActivity
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class PlaceholderFragment extends Fragment { //CLASE QUE CAMBIA LOS FRAGMENTS
         /**
          * The fragment argument representing the section number for this
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private static final String ARG_SPORT_NAME = "sport_name";
+        private TextView myTV;
+        private static String sport;
 
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
+        public static PlaceholderFragment newInstance(int sectionNumber, String sportName) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            args.putString(ARG_SPORT_NAME, sportName);
+            sport = sportName;
             fragment.setArguments(args);
             return fragment;
         }
@@ -147,6 +187,9 @@ public class MenuActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
+            myTV = (TextView) rootView.findViewById(R.id.section_label);
+            myTV.setText(sport);
+
             return rootView;
         }
 

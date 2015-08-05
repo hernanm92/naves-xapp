@@ -14,7 +14,7 @@ public class DataSource {
 
     static{
 
-        TAREAS.add(new Truco("oqIdEKzqPh0", "Shove it","Longboard",R.drawable.shove_it));
+        TAREAS.add(new Truco("oqIdEKzqPh0", "Shove it","Longboard",R.drawable.shove_it)); //poner imagenes de baja resolucion (buscar optima)
         TAREAS.add(new Truco("Mmjbaa5Q4Dk", "Kickflip","Longboard",R.drawable.kickflip));
         TAREAS.add(new Truco("2750ooxbUM4", "Flat top","Longboard",R.drawable.flat_top));
         TAREAS.add(new Truco("o-K0Y-yfPjM", "Ghostride kickflip","Longboard",R.drawable.ghostride_kickflip)); //cambiar video

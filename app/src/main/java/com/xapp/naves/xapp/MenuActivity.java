@@ -14,9 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MenuActivity extends ActionBarActivity
@@ -46,6 +48,20 @@ public class MenuActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
+
+    /*@Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        Truco trucoActual = (Truco)adaptador.getItem(position);
+        String msg = "Elegiste la tarea:\n"+trucoActual.getNombre()+"-"+trucoActual.getId();
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+
+
+        Intent intent = new Intent(MenuActivity.this, ViewVideoActivity.class);
+        intent.putExtra("VideoId", trucoActual.getId()); //Your id
+        startActivity(intent);
+
+    }*/
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
